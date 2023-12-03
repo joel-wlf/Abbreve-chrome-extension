@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { LoadingSpinner } from "./LoadingSpinner";
-import '../index.css'
 
 const Form = () => {
   const [data, setData] = useState(null);
@@ -69,6 +68,7 @@ const Form = () => {
   }, [userInput]);
 
   return (
+    <main className="font-poppins bg-inherit dark md:px-14 dark:bg-dark max-w-screen px-4 py-8 sm:px-6 lg:px-8 lg:bg-snow lg:shadow-md">
     <div className="py-5 md:mb-0 lg:py-12 px-[14px] dark:bg-dark">
       <section className="block justify-center md:pb-16 md:flex md:flex-col lg:flex lg:flex-row items-center">
         <div className="md:w-full lg:pr-20 lg:w-1/2 flex flex-col">
@@ -106,7 +106,7 @@ const Form = () => {
               <input
                 type="text"
                 placeholder="Search slang full meaning..."
-                className="flex-1 w-[14rem] h-6 ml-2 border-none outline-none placeholder:text-black bg-ash"
+                className="flex-1 w-[14rem] h-6 ml-2 border-none outline-none placeholder:text-gray-00 bg-ash"
                 value={userInput}
                 onChange={(e) =>
                   setUserInput(e.target.value.toLocaleLowerCase())
@@ -117,7 +117,7 @@ const Form = () => {
             <button
               onClick={fetchData}
               disabled={isLoading || !hasUserInputChanged}
-              className="bg-deeppurple text-ash font-bold rounded-xl hover:scale-110 p-2 mt-4 md:mt-0 items-center flex justify-center h-[50px] min-w-[100px] w-full md:w-auto">
+              className="bg-purple-800 text-gray-100 font-semibold rounded-xl hover:scale-110 p-2 mt-4 md:mt-0 items-center flex justify-center h-[50px] min-w-[100px] w-full md:w-auto">
               {isLoading ? <LoadingSpinner /> : "Search"}
             </button>
           </form>
@@ -158,15 +158,15 @@ const Form = () => {
                 1. You can help us add this by creating a{" "}
                 <a
                   href="https://github.com/Njong392/Abbreve"
-                  className=" text-deeppurple dark:text-purple">
+                  className=" text-purple-800 dark:text-purple">
                   github issue
                 </a>
               </p>
-              <p className="text-dark dark:text-ash w-3/4">
+              <p className="text-dark dark:text-ash w-full">
                 2. Or, you could fill out this{" "}
                 <a
                   href="https://t.co/mp86BLYBhq"
-                  className="text-deeppurple dark:text-purple">
+                  className="text-purple-800 dark:text-purple">
                   feedback form
                 </a>{" "}
                 and we will address the issue
@@ -176,6 +176,7 @@ const Form = () => {
         </div>
       </section>
     </div>
+    </main>
   );
 };
 
