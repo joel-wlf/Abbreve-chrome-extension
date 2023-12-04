@@ -36,7 +36,7 @@ Build with vite
   npm run build
 ```
 
-The build folder can now be importet as unpacked in the Chrome extension setting if developer mode is activated.
+The build folder can now be importet as unpacked in the chrome extension settings if developer mode is activated.
 
 
 ## License
