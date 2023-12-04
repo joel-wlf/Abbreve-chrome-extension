@@ -68,7 +68,7 @@ const Form = () => {
   }, [userInput]);
 
   return (
-    <main className="font-poppins bg-inherit dark md:px-14 dark:bg-dark max-w-screen px-4 py-8 sm:px-6 lg:px-8 lg:bg-snow lg:shadow-md">
+    <main className="font-poppins bg-dark dark md:px-14 dark:bg-dark max-w-screen px-4 py-8 sm:px-6 lg:px-8 lg:bg-snow lg:shadow-md">
     <div className="py-5 md:mb-0 lg:py-12 px-[14px] dark:bg-dark">
       <section className="block justify-center md:pb-16 md:flex md:flex-col lg:flex lg:flex-row items-center">
         <div className="md:w-full lg:pr-20 lg:w-1/2 flex flex-col">
@@ -117,7 +117,7 @@ const Form = () => {
             <button
               onClick={fetchData}
               disabled={isLoading || !hasUserInputChanged}
-              className="bg-purple-800 text-gray-100 font-semibold rounded-xl hover:scale-110 p-2 mt-4 md:mt-0 items-center flex justify-center h-[50px] min-w-[100px] w-full md:w-auto">
+              className="bg-deeppurple text-ash font-semibold rounded-xl hover:scale-110 p-2 mt-4 md:mt-0 items-center flex justify-center h-[50px] min-w-[100px] w-full md:w-auto">
               {isLoading ? <LoadingSpinner /> : "Search"}
             </button>
           </form>
