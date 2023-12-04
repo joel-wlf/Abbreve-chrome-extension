@@ -78,10 +78,6 @@ const Form = () => {
             </span>{" "}
             and our dictionary will spit out an abbreviation.{" "}
           </h2>
-          <p className="text-gray text-left lg:text-left md:text-center px-0 md:px-10 xmd:px-20 lg:px-0 text-sm mt-5">
-            *For now, abbreviations are one-way. For example, Idk can only
-            translate to 'I don't know', and not the other way round.
-          </p>
         </div>
 
         <div className="mt-2 lg:mt-0 md:mt-4  lg:mb-24">
