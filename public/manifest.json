@@ -1,11 +1,11 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Abbreve",
   "description": "This extension helps you understand any abbreviations.",
   "version": "0.0.1",
 
-  "browser_action": {
+  "action": {
     "default_icon": "abbreve-logo.png",
     "default_popup": "index.html",
     "default_title": "Open Abbreve"
